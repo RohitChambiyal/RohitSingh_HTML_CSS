@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>Login</title>
+    
+
+    </head>
+    <body style="background-image : url(Black-Wallpaper-7A2.jpg) ;background-size: cover; color: white"> 
+
+
+ 
+        <script>
+        function check(){
+            var name= document.getElementById("name").value;
+            var password= document.getElementById("p1").value;
+           
+            var errormessage = document.getElementById("e");
+            var errorthrow = "";
+            
+            try{
+                if(name!='user')
+                    {
+                        errorthrow += "<br> Username Incorrect";
+                        alert("Username Incorrect");
+                    }
+                if(password!='Password1')
+                    {
+                        errorthrow += "<br> Password Incorrect";
+                        alert("Incorrect Password Entered");
+                    }
+                if(name=='user'&&password=='Password1'))
+                   {
+                  window.open("myproject.html");
+                   }
+                throw errorthrow;
+                
+                
+                
+            }
+            catch(err)
+                {errormessage.innerHTML =err;}
+            
+        }
+        
+        
+        </script>
+         
+    
+        <div style="min-width: 400px;background-image : url(hh.jpg)opacity: 0.5;; border: 4px grey double; margin:60px 430px 100px 430px ; padding : 10px 20px 10px 30px;">
+          <div>  <img src="docc.png" height="100px" width="100px" style="display: block;
+    margin: auto;
+              "></div>
+            
+        <h1 style="opacity: 0.9; text-align: center;padding: 20px 0px 40px 0px "> Login Portal </h1>
+        <div style="margin: 0px 0px 50px 50px">
+            <label style="padding-right: 40px;">Enter Name : </label> <input maxlength="12" id = "name"type= "text" required="required">
+            <br>
+            <br>
+            
+            
+            <label style="padding-right: 18px">Enter Password :</label> <input id = "p1" type= "password" required>
+            <br>
+            <br>
+        
+            <button style="font-family:cursive;font-size: 20px; background-color:red;color:white;border-color: red; margin:10px 0px 0px 80px;padding: 4px 50px 4px 50px;border-radius: 15px;color:white; " onclick="check();">
+                <b style="text-align: center">Login</b></button><br>
+            </div>
+            <a href="#"style="font-size: 18px;color: red; " ><p style="text-align:  center">Forget Password</p></a>
+            
+            
+            <br>
+            <div style="color:white; margin:0px 0px 0px 0px;padding: 0px;">
+                 <p style="color:red; margin:0px 0px 0px 0px;padding: 0px;" id="e" style="color: red"></p>
+            <p style="text-align: center"> Do not Have an Account ?</p>
+               
+            
+                
+            <a href="  " style=":hovercolor: red;" ><p style="text-align: center">Click here to Sign up.</p></a>
+            </div>
+            </div>
+        
+            
+           
+        <div>
+        </div>
+       
+    </body>
+</html>
